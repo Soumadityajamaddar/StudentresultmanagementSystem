@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Student Result Management System 🎓
 
 A simple **console-based Student Result Management System** developed using Core Java. This project automates student result calculations and demonstrates fundamental Object-Oriented Programming (OOP) concepts.
@@ -145,4 +145,4 @@ This project is developed for educational and learning purposes.
 =======
 # StudentresultmanagementSystem
 A console-based Student Result Management System developed using Core Java.
->>>>>>> f16615821337e8b4333b8ee1b7d84d1ffa9dfa52
+
