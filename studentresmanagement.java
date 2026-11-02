@@ -1,22 +1,22 @@
 
 import java.util.Scanner;
 
-// Class 1: Student
+
 class Student {
 
-    // Private data members (Encapsulation)
+ 
     private int rollNo;
     private String name;
     private int[] marks;
 
-    // Constructor
+  
     public Student(int rollNo, String name, int[] marks) {
         this.rollNo = rollNo;
         this.name = name;
         this.marks = marks;
     }
 
-    // Method to calculate total marks
+   
     public int calculateTotal() {
         int total = 0;
 
@@ -27,12 +27,12 @@ class Student {
         return total;
     }
 
-    // Method to calculate percentage
+    
     public double calculatePercentage() {
         return (double) calculateTotal() / marks.length;
     }
 
-    // Method to calculate grade
+    
     public String calculateGrade() {
         double percentage = calculatePercentage();
 
@@ -51,7 +51,7 @@ class Student {
         }
     }
 
-    // Method to check pass or fail
+    
     public String getResult() {
         for (int mark : marks) {
             if (mark < 35) {
@@ -62,7 +62,7 @@ class Student {
         return "PASS";
     }
 
-    // Method to display student result
+    
     public void displayResult() {
         System.out.println("\n----- STUDENT RESULT -----");
 
@@ -81,14 +81,14 @@ class Student {
         System.out.println("Final Result: " + getResult());
     }
 
-    // Getter method
+  
     public int getRollNo() {
         return rollNo;
     }
 }
 
 
-// Class 2: Main class
+
 public class studentresmanagement {
 
     public static void main(String[] args) {
@@ -100,7 +100,7 @@ public class studentresmanagement {
 
         Student[] students = new Student[n];
 
-        // Taking student details
+    
         for (int i = 0; i < n; i++) {
 
             System.out.println("\nEnter details of Student " + (i + 1));
@@ -123,14 +123,14 @@ public class studentresmanagement {
             students[i] = new Student(rollNo, name, marks);
         }
 
-        // Display all student results
+     
         System.out.println("\n========== ALL STUDENT RESULTS ==========");
 
         for (int i = 0; i < n; i++) {
             students[i].displayResult();
         }
 
-        // Search individual result by roll number
+       
         System.out.print("\nEnter Roll Number to search result: ");
         int searchRoll = sc.nextInt();
 
